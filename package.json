@@ -1,0 +1,20 @@
+{
+  "name": "promised-land",
+  "version": "1.0.0",
+  "description": "Demo of using promises in javascript",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Darren Coxall <darren@darrencoxall.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  },
+  "dependencies": {
+    "cheerio": "^0.20.0",
+    "request": "^2.69.0"
+  }
+}
