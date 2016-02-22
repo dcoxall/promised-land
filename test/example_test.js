@@ -19,14 +19,11 @@ describe("Example Tests", function() {
   });
 
   it("can fetch an offer and then submit it", function(done) {
-    // THIS IS WRONG
-    var offer;
     mns.getOffer(function(value) {
-      offer = value;
-    }, done);
-    mns.submitOffer(offer, function(result) {
-      expect(result.json.offer).to.be.eq("MOTHER'S DAY FLOWER OFFERS - LIMITED TIME ONLY");
-      done();
+      mns.submitOffer(value, function(result) {
+        expect(result.json.offer).to.be.eq("MOTHER'S DAY FLOWER OFFERS - LIMITED TIME ONLY");
+        done();
+      }, done);
     }, done);
   });
 
